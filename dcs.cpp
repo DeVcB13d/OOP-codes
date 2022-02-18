@@ -20,7 +20,7 @@ class strings
         }
         strings (const char *s){
             length = strlen(s);
-            name  = new char [length + 1];
+            name  = new char [length + 1];// charecter array of length +1 is created
             strcpy(name ,s);
         }
         void display(void){
@@ -41,7 +41,8 @@ void strings::join(strings A , strings B){
 int main()
 {
     //different names have different charecters
-    strings name1("Rakesh "),name2("Kumar "),name3("Sinha"),S1,S2;
+    strings name1("Rakesh "),name2("Kumar "),name3("Rajesh"),S1,S2;
+
     S1.join(name1,name2);
     S2.join(S1,name3);
     name1.display();
