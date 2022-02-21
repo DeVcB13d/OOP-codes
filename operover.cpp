@@ -8,6 +8,7 @@ class space{
         space(int,int,int);
         void display(void);
         friend space operator- (space);
+        space operator+ (space) ;
 };
 
 space::space(int a,int b,int c){
@@ -26,7 +27,14 @@ space operator- (space a){
     return s;
 }
 
-
+space space::operator+ (space l){
+    space m ;
+    m.x = l.x + x ;
+    m.y = l.y + y ;
+    m.z = m.z + z ;
+    return m ;
+    
+}
 int main()
 {
     space s(100,-200,300);
@@ -35,7 +43,11 @@ int main()
     space k;
     k = -s;
     cout << "k = ";
+    
     k.display();
+    cout << "z = " ;
+    k.operator+(s);
+    k.display() ;
     
 }
 
