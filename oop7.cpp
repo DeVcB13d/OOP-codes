@@ -5,6 +5,11 @@ class time{
     int hours; 
     int minutes ;
     public:
+    time(){}
+    time(int t){
+        hours = t /60;
+        minutes = t%60 ;
+    }
     void gettime(int h , int mins){
         hours = h ;
         minutes = mins ;
@@ -25,11 +30,9 @@ void time::sum(time t1,time t2){
 
 int main()
 {
-    time T1 , T2 , T3 ;
-    T1.gettime(2,45);
-    T2.gettime(3,30);
-    T3.sum(T1,T2);
-    T1.puttime();
-    T2.puttime();
-    T3.putu
+    time T ;
+    int value = 85 ;
+    T = value ;
+    T.puttime();
+    return 0 ;
 }
