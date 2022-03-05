@@ -1,7 +1,7 @@
 #include<iostream>
 using namespace std;
 
-class invent2;
+//class invent2;
 
 class invent1
 {
@@ -26,7 +26,7 @@ class invent1
         operator float(){
             return (item*price);
         }
-        operator invent2();
+        //operator invent2();
 };
 
 class invent2
@@ -44,12 +44,12 @@ class invent2
             code = x;
             value = y; 
         }
-        
-        //invent2(invent1 p)
-        //{
-        //    code = p.getcode();
-        //    value = p.getitem() * p.getprice();
-        //}
+        //method 1 : constructor
+        invent2(invent1 p) 
+        {
+            code = p.getcode();
+            value = p.getitem() * p.getprice();
+        }
         
         void putdata()
         {
@@ -57,12 +57,12 @@ class invent2
             cout << "value : " << value << "\n";
         }
 };
-
+/*
 invent1::operator invent2()
 {
-            invent2 temp(code,price*item);
-            return temp;
-        }
+    invent2 temp(code,price*item);
+    return temp;
+}*/
 int main()
 {
     invent1 S1(100,5,140.0);
