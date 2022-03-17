@@ -1,6 +1,6 @@
 #include<iostream>
 #include <cstdarg>
-
+//Program using variabele arguments for functions
 using namespace std ;
 
 double average(int num,...){

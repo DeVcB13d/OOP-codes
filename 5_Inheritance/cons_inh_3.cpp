@@ -1,7 +1,7 @@
 #include<iostream>
 using namespace std ;
 
-//This is for multipath inheritance
+//This is for multipath inheritance or hybrid inheritance
 
 class G
 {
@@ -12,7 +12,7 @@ class G
         cout << "G called\n";
     }
 };
-
+//Declaring clasess as virtual prevents them from getting inherited twice
 class P1:virtual public G
 {
     int x ;

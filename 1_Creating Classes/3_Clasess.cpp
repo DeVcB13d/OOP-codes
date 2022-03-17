@@ -1,18 +1,24 @@
 #include<iostream>
+
+//Introduction to classes in C++
+
 using namespace std;
 class person
 {
+    //Private Data Members
     string name;
     int age;
     
     public:
-    person(string a , int b){
+    //Public member functions
+    person(string a , int b){ //constructor
         name  = a;
         age = b ;
     }
         void getdata(void);
         void display(void);
 };
+//When fns are defined outisde, scope res operator is neccessary
 void person :: getdata(void)
 {
     cout << " Enter name: " ;
@@ -21,7 +27,7 @@ void person :: getdata(void)
     cin >> age;
 }
 
-void person :: display(void)
+void person :: display(void) 
 {
     cout << "\nName: " << name;
     cout << "\nAge: " << age;
