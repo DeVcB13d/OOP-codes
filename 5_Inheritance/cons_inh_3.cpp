@@ -37,7 +37,7 @@ class C : public P1,public P2
 {
     int p;
     public:
-    C(int i,int j,int k,int l):P1(j),P2(k),G(i)
+    C(int i,int j,int k,int l):P1(j,i),P2(k,i),G(i)
     {
         p = i ;
         cout << "C called\n";

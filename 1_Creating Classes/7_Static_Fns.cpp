@@ -17,12 +17,14 @@ class test{
     
 };
 
-int test::count ;
-int main{
+int test::count = 0;
+int main()
+{
     test t1,t2;
-    t1.setcode;
-    t2.setcode;
+    t1.setcode();
+    t2.setcode();
     test::showcount();
+    test t3;
     t3.setcode();
     test::showcount();
     t1.showcode();

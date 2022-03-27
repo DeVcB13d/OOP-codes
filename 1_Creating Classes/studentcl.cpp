@@ -4,17 +4,17 @@ using namespace std;
 class student
 {
     private:
-        char[30] name ;
+        char name [30];
         int age;
         int marks;
     public:
         void getdata(void);
         void showdata(void);
-        int percentage(marks) 
+        int percentage(int marks) 
         {
-            return marks * 100
+            return marks * 100;
         }
-}
+};
 
 void student :: getdata(void)
 {
@@ -22,23 +22,21 @@ void student :: getdata(void)
     cin >> name;
     cout << "Enter his age:\n";
     cin >> age ;
-    cout >> "Enter his marks\n";
+    cout << "Enter his marks\n";
     cin >> marks;
 }
 
 void student :: showdata(void)
 {
-    cout << name
+    cout << name;
 }
 
 
 int main()
 {
     student a ;
-
-    a.getdata ;
-    
-    a.showdata ;
+    a.getdata();    
+    a.showdata() ;
     return 0;
     
 }

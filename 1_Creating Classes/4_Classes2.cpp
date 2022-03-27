@@ -13,7 +13,7 @@ class item
             cout << "cost = " << cost << "\n";
         }
 };
- 
+
 void item::getdata(int a , float b )
 {
     num = a;

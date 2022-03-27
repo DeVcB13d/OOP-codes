@@ -8,7 +8,7 @@ class set {
         void display(void) ;
         int largest(void) ;
 };
-void set::largest(void){
+int set::largest(void){
     if (m > n){
         return m ;
     }

@@ -8,7 +8,7 @@ class item{
     float itemprice[m];
     int count;
     public:
-       void setcount(void){
+    void setcount(void){
             count = 0 ;
         }
         void getitem(void){
@@ -43,6 +43,7 @@ void item::remove(int code){
             }
             cout << code << " has been deleted " <<"\n";
             c++;
+            count--;
         }
     }
     if (c == 0){cout << code << " does not exist"<<'\n';}

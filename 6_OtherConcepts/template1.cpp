@@ -19,7 +19,7 @@ class array
         }
 };
 
-array::array(T *a,int sz)
+array<class T>::array(T *a,int sz)
 {
     arr = new T[sz+1];
     for(int i=0;i<sz;i++){

@@ -34,9 +34,9 @@ int custs[];
 
 
 void createobjlist(){
+    int n;
     cout << "Enter number of objects";
     cin >> n ;
-    int new custs[n];
 }
 
 
