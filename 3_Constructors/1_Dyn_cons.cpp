@@ -42,7 +42,6 @@ int main()
 {
     //different names have different charecters
     strings name1("Rakesh "),name2("Kumar "),name3("Rajesh"),S1,S2;
-
     S1.join(name1,name2);
     S2.join(S1,name3);
     name1.display();
